@@ -6,7 +6,7 @@ var nodemailer = require('nodemailer');
 
 admin.initializeApp({
   credential: admin.credential.applicationDefault(),
-  databaseURL: 'https://bmax-4f9dc.firebaseio.com'
+  databaseURL: '--- your firebase database url ----'
 });
 
 process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
