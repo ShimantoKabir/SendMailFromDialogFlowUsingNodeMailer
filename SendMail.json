@@ -1,0 +1,72 @@
+{
+  "id": "1a594715-af8f-4b1f-91c7-13af202c3123",
+  "name": "SendMail",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "SendMail",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "2e262048-e43c-4d30-bde4-4c9561e2bb33",
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "email",
+          "value": "$email",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Let me know your email."
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "96b2cd3f-7823-41d9-b026-86577ad60ca4",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "subject",
+          "value": "$subject",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Let me know your subject."
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "74cce43e-b1c5-4327-b0d8-2311bc985917",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "message",
+          "value": "$message",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Let me know your message."
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "ERROR : Something wrong in web hook !"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1532187647,
+  "fallbackIntent": false,
+  "events": []
+}
